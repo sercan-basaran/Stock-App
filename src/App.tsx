@@ -12,19 +12,14 @@ import YeniÜrünEkle from "./views/Pages/YeniÜrünEkle";
 import Yönetim from "./views/Pages/Yönetim";
 import StockListe from "./views/Pages/StockListe";
 import PanelMEnu from "./views/Pages/PanelMEnu";
-import {
-  AracTipi,
-  AracMArkasi,
-  AracModeli,
-  AracYili,
-} from "./views/Pages/PanelMEnuForm";
-import {
-  AracTipiListe,
-  AracMArkasiListe,
-  AracModeliListe,
-  AracYiliListe,
-} from "./views/Pages/PanelMEnuListele";
-
+import {VehicleType} from './views/Pages/YonetimSyafaları/AracTipiEkleme/VehicleType'
+import {VehicleBrand} from './views/Pages/YonetimSyafaları/AracTipiEkleme/VehicleBrand'
+import {VehicleModel} from './views/Pages/YonetimSyafaları/AracTipiEkleme/VehicleModel'
+import {VehicleYears} from './views/Pages/YonetimSyafaları/AracTipiEkleme/VehicleYears'
+import {VehicleTypeList} from './views/Pages/YonetimSyafaları/AraçListeleme/VehicleTypeList';
+import {VehicleBrandList} from './views/Pages/YonetimSyafaları/AraçListeleme/VehicleBrandList';
+import {VehicleModelList} from './views/Pages/YonetimSyafaları/AraçListeleme/VehicleModelList';
+import {VehicleYearsList} from './views/Pages/YonetimSyafaları/AraçListeleme/VehicleYearsList';
 function App() {
   return (
     <div className="grid">
@@ -45,14 +40,14 @@ function App() {
           <Route path="/" element={<YeniÜrünEkle />} />
           <Route path="yonetim" element={<Yönetim />}>
             <Route path="ekle" element={<PanelMEnu />} />
-            <Route path="form" element={<AracTipi />} />
-            <Route path="form1" element={<AracMArkasi />} />
-            <Route path="form2" element={<AracModeli />} />
-            <Route path="form3" element={<AracYili />} />
-            <Route path="liste" element={<AracTipiListe />} />
-            <Route path="liste1" element={<AracMArkasiListe />} />
-            <Route path="liste2" element={<AracModeliListe />} />
-            <Route path="liste3" element={<AracYiliListe />} />
+            <Route path="form" element={<VehicleType />} />
+            <Route path="form1" element={<VehicleBrand />} />
+            <Route path="form2" element={<VehicleModel />} />
+            <Route path="form3" element={<VehicleYears />} />
+            <Route path="liste" element={<VehicleTypeList />} />
+            <Route path="liste1" element={<VehicleBrandList />} />
+            <Route path="liste2" element={<VehicleModelList />} />
+            <Route path="liste3" element={<VehicleYearsList />} />
           </Route>
           <Route path="/stockliste" element={<StockListe />} />
         </Routes>

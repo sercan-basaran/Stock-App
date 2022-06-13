@@ -20,3 +20,12 @@
     box-shadow: 0 0 0 1px var(--blue-200);
   }
   
+  
+  .border{
+    background-color: var(--bluegray-50);
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 650px;
+    height: 300px;
+    
+  }

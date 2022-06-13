@@ -41,6 +41,9 @@ function PanelMEnu() {
         {
           label: "Liste",
           icon: "pi pi-list",
+          command:()=>{
+            navigate("liste1")
+          }
         },
       ],
     },
@@ -59,6 +62,9 @@ function PanelMEnu() {
         {
           label: "Liste",
           icon: "pi pi-list",
+          command:()=>{
+            navigate("liste2")
+          }
         },
       ],
     },
@@ -77,6 +83,9 @@ function PanelMEnu() {
         {
           label: "Liste",
           icon: "pi pi-list",
+          command:()=>{
+            navigate("liste3")
+          }
         },
       ],
     },
